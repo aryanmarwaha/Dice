@@ -1,0 +1,36 @@
+#dice{
+	height: 400px;
+	width: 400px;
+	border: 0px solid black;
+	transform: rotateX(0deg) rotateY(70deg) rotateZ(40deg);
+
+	transform-style: preserve-3d;
+}
+.dice_face{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	border-radius: 1.99rem;
+	background-color: orangered;
+	opacity: 0.6;
+/*	content: ".";*/
+}
+
+.front_face{
+	transform: translateZ(200px);
+}
+.right_face{
+	transform: rotateY(90deg) translateZ(200px);
+}
+.back_face{
+	transform: translateZ(-200px);
+}
+.left_face{
+	transform: rotateY(90deg) translateZ(-200px);
+}
+.top_face{
+	transform: rotateX(90deg) translateZ(200px);
+}
+.bottom_face{
+	transform: rotateX(90deg) translateZ(-200px);
+}
